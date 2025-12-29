@@ -155,9 +155,7 @@
     }
 
     /* Ensure video modal close button sits above the player */
-    #videoModal .close{
-      z-index:2;
-    }
+    #videoModal .close{z-index:2;}
 
     /* Text modal overrides */
     .modal .panel.text-panel{max-width:840px;width:92%;max-height:80vh;overflow:auto;padding:24px 20px 20px 20px;aspect-ratio:auto}
@@ -207,14 +205,21 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="nav">
-      <div class="brand"><div class="logo"></div><b>Kevin</b><span style="color:var(--muted);font-weight:600">/ Video Editor • Workflow Architect</span></div>
+      <div class="brand">
+        <div class="logo"></div>
+        <b>Kevin</b>
+        <span style="color:var(--muted);font-weight:600">/ Video Editor • Workflow Architect</span>
+      </div>
+
       <nav class="menu">
         <a href="#about">About</a>
         <a href="#work">Work</a>
         <a href="#case">Workflow</a>
+        <a href="#best-for">Best For</a>
         <a href="#systems">Systems</a>
         <a href="#contact">Contact</a>
         <button id="themeToggle" class="toggle" aria-label="Toggle light/dark mode" title="Toggle theme">🌙</button>
@@ -254,7 +259,11 @@
 
     <!-- SELECTED WORK -->
     <section id="work">
-      <div class="section-head"><h2>Selected Work</h2><p>Hand-picked cuts across promotional, social, podcast, and studio.</p></div>
+      <div class="section-head">
+        <h2>Selected Work</h2>
+        <p>Hand-picked cuts across promotional, social, podcast, and studio.</p>
+      </div>
+
       <div class="grid">
         <!-- 1 -->
         <div class="card" data-video="https://youtu.be/JBV_dYfvuIY" aria-label="Pega Academy 2.0 — Launch Promo">
@@ -270,6 +279,7 @@
             <a href="#" class="learn-more" data-project="project-academy" style="display:inline-block;margin-top:6px;color:var(--brand);font-weight:700;">Learn more about this project →</a>
           </div>
         </div>
+
         <!-- 2 -->
         <a class="card" href="https://www.youtube.com/watch?v=018mzJBiXo8"
            data-video="https://www.youtube.com/watch?v=018mzJBiXo8" aria-label="Promo">
@@ -284,6 +294,7 @@
             <p>This was created as part of a promotional strategy for users to enter the annual Pega Community Hackathon.</p>
           </div>
         </a>
+
         <!-- 3 -->
         <div class="card" data-video="https://youtu.be/hOhzBA2Ii-E" aria-label="Move Fast, Tell Stories">
           <div class="thumb" style="background:
@@ -298,6 +309,7 @@
             <a href="https://youtu.be/hOhzBA2Ii-E" class="learn-more" data-project="project-movefast" style="display:inline-block;margin-top:6px;color:#7c5cff;font-weight:700;">Learn more about this project →</a>
           </div>
         </div>
+
         <!-- 4 -->
         <a class="card" href="https://youtu.be/rwjUystpQAw"
            data-video="https://youtu.be/rwjUystpQAw" aria-label="Podcast Highlights — S1 (2019)">
@@ -312,6 +324,7 @@
             <p>A 5-minute highlight reel cut from a 20-minute podcast episode, showcasing conversational pacing and multi-camera flow. This is a recurring podcast series that I edit regularly.</p>
           </div>
         </a>
+
         <!-- 5 -->
         <a class="card" href="https://players.brightcove.net/1519050010001/obdhcLv77W_default/index.html?videoId=6376795414112"
            data-video="https://players.brightcove.net/1519050010001/obdhcLv77W_default/index.html?videoId=6376795414112"
@@ -327,6 +340,7 @@
             <p>Product owner conversation showcasing multi-camera synchronization, reaction cuts, and exposure matching for consistent visual tone.</p>
           </div>
         </a>
+
         <!-- 6 -->
         <div class="card" data-video="https://www.youtube.com/watch?v=k4z_OY9Yd8o" aria-label="Assault on Precinct 13 — Modern Trailer">
           <div class="thumb" style="background:
@@ -356,12 +370,17 @@
 
     <!-- WORKFLOW -->
     <section id="case">
-      <div class="section-head"><h2>Workflow — How I Edit</h2><p>From creative exploration to brand-safe delivery, with documented feedback at every step.</p></div>
+      <div class="section-head">
+        <h2>Workflow — How I Edit</h2>
+        <p>From creative exploration to brand-safe delivery, with documented feedback at every step.</p>
+      </div>
+
       <div class="case">
         <div class="pane flex">
           <h3>Planning & Assembly</h3>
           <p>I’m highly process-oriented and deadline-driven, approaching each project with clear goals and a structured plan. I experiment with pacing, tone, and rhythm early on to find the right flow, while maintaining a clean, organized project that anyone could easily pick up.</p>
         </div>
+
         <div class="pane flex">
           <h3>Structure → Brand-Safe Delivery</h3>
           <p>When precision matters, I switch into standards mode: templates, captions, QC, and repeatable exports. Feedback is collected with <b>timestamped comments</b> for accountability and a clean paper trail.</p>
@@ -373,49 +392,34 @@
       </div>
     </section>
 
-<!-- =========================
-     WHO I'M BEST FOR
-     Place this section between "Workflow / How I Edit" and "What I Can Do for Your Team"
-     ========================= -->
-<section id="best-for" class="section">
-  <div class="container">
-    <h2 class="section-title">Who I’m Best For</h2>
+    <!-- WHO I'M BEST FOR (FIXED: uses your existing styles; no extra CSS needed) -->
+    <section id="best-for">
+      <div class="section-head">
+        <h2>Who I’m Best For</h2>
+        <p>Where my workflow tends to shine.</p>
+      </div>
 
-    <p class="lead">
-      I do my best work with teams that want video to be clear, scalable, and dependable—not just creative for creativity’s sake.
-    </p>
+      <div class="pane">
+        <p>I do my best work with teams that want video to be clear, scalable, and dependable—not just creative for creativity’s sake.</p>
 
-    <p class="muted">
-      I’m especially effective in environments where:
-    </p>
+        <p style="color:var(--muted);margin-top:10px;margin-bottom:10px;">
+          I’m especially effective in environments where:
+        </p>
 
-    <ul class="bullets">
-      <li>Video needs to support real business or organizational goals, not just one-off requests</li>
-      <li>There’s a desire for structure, standards, and repeatability, rather than starting from scratch every time</li>
-      <li>Teams are building or evolving their in-house video capabilities</li>
-      <li>Internal content, training, or enablement needs to be high-quality and easy to maintain over time</li>
-      <li>Ownership matters—someone needs to run the video pipeline, not just execute individual edits</li>
-    </ul>
+        <ul style="margin:0 0 14px 18px; line-height:1.7;">
+          <li>Video needs to support real business or organizational goals, not just one-off requests</li>
+          <li>There’s a desire for structure, standards, and repeatability, rather than starting from scratch every time</li>
+          <li>Teams are building or evolving their in-house video capabilities</li>
+          <li>Internal content, training, or enablement needs to be high-quality and easy to maintain over time</li>
+          <li>Ownership matters—someone needs to run the video pipeline, not just execute individual edits</li>
+        </ul>
 
-    <p>
-      I work well with teams that value clear communication, thoughtful planning, and collaboration. I’m comfortable partnering closely with stakeholders and contributors, and I’m equally effective owning projects end-to-end—from early planning through final delivery.
-    </p>
-  </div>
-</section>
+        <p style="margin:0;">
+          I work well with teams that value clear communication, thoughtful planning, and collaboration. I’m comfortable partnering closely with stakeholders and contributors, and I’m equally effective owning projects end-to-end—from early planning through final delivery.
+        </p>
+      </div>
+    </section>
 
-<!-- Optional: minimal CSS if you don't already have these utility classes -->
-<style>
-  /* If your site already defines .section/.container/etc, you can remove this <style> block */
-  .section { padding: 72px 0; }
-  .container { width: min(1100px, 92vw); margin: 0 auto; }
-  .section-title { font-size: clamp(28px, 3vw, 36px); margin: 0 0 14px; }
-  .lead { font-size: 1.1rem; line-height: 1.7; margin: 0 0 10px; }
-  .muted { opacity: 0.8; margin: 0 0 12px; }
-  .bullets { margin: 0 0 18px; padding-left: 1.1rem; }
-  .bullets li { margin: 10px 0; line-height: 1.6; }
-</style>
-
-    
     <!-- SYSTEMS -->
     <section id="systems">
       <div class="section-head">
@@ -721,130 +725,130 @@
     </div>
   </template>
 
-<script>
-  // Year
-  document.getElementById('y').textContent = new Date().getFullYear();
+  <script>
+    // Year
+    document.getElementById('y').textContent = new Date().getFullYear();
 
-  // THEME TOGGLE
-  (function(){
-    const key = 'pref-theme';
-    const root = document.body;
-    const btn = document.getElementById('themeToggle');
+    // THEME TOGGLE
+    (function(){
+      const key = 'pref-theme';
+      const root = document.body;
+      const btn = document.getElementById('themeToggle');
 
-    function applyButtonUI(theme){
-      const next = theme === 'light' ? 'dark' : 'light';
-      btn.textContent = next === 'light' ? '☀️' : '🌙';
-      const label = `Switch to ${next} mode`;
-      btn.setAttribute('aria-label', label);
-      btn.setAttribute('title', label);
-    }
+      function applyButtonUI(theme){
+        const next = theme === 'light' ? 'dark' : 'light';
+        btn.textContent = next === 'light' ? '☀️' : '🌙';
+        const label = `Switch to ${next} mode`;
+        btn.setAttribute('aria-label', label);
+        btn.setAttribute('title', label);
+      }
 
-    const stored = localStorage.getItem(key);
-    let theme = stored || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-    root.setAttribute('data-theme', theme);
-    applyButtonUI(theme);
-
-    btn.addEventListener('click', () => {
-      theme = (root.getAttribute('data-theme') === 'light') ? 'dark' : 'light';
+      const stored = localStorage.getItem(key);
+      let theme = stored || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
       root.setAttribute('data-theme', theme);
-      localStorage.setItem(key, theme);
       applyButtonUI(theme);
-    });
-  })();
 
-  // VIDEO & TEXT MODALS
-  (function(){
-    const videoModal = document.getElementById('videoModal');
-    const videoMount = document.getElementById('videoMount');
-    const textModal = document.getElementById('textModal');
-    const textMount = document.getElementById('textMount');
+      btn.addEventListener('click', () => {
+        theme = (root.getAttribute('data-theme') === 'light') ? 'dark' : 'light';
+        root.setAttribute('data-theme', theme);
+        localStorage.setItem(key, theme);
+        applyButtonUI(theme);
+      });
+    })();
 
-    function ytToEmbed(url){
-      try{
-        const u = new URL(url);
-        if(u.hostname.includes('youtu.be')){
-          const id = u.pathname.replace('/','');
-          return `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+    // VIDEO & TEXT MODALS
+    (function(){
+      const videoModal = document.getElementById('videoModal');
+      const videoMount = document.getElementById('videoMount');
+      const textModal = document.getElementById('textModal');
+      const textMount = document.getElementById('textMount');
+
+      function ytToEmbed(url){
+        try{
+          const u = new URL(url);
+          if(u.hostname.includes('youtu.be')){
+            const id = u.pathname.replace('/','');
+            return `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+          }
+          if(u.hostname.includes('youtube.com')){
+            const id = u.searchParams.get('v');
+            if(id) return `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+          }
+        }catch(e){}
+        return null;
+      }
+
+      function openVideoModal(src){
+        videoMount.innerHTML = '';
+        let node;
+        if(/\.mp4($|\?)/i.test(src)){
+          node = document.createElement('video');
+          node.setAttribute('controls','');
+          node.setAttribute('autoplay','');
+          node.src = src;
+          node.style.width = '100%';
+          node.style.height = '100%';
+        } else {
+          const yt = ytToEmbed(src);
+          const iframeSrc = yt || (src + (src.includes('?') ? '&' : '?') + 'autoplay=1');
+          node = document.createElement('iframe');
+          node.src = iframeSrc;
+          node.allow = 'autoplay; fullscreen; picture-in-picture';
+          node.loading = 'lazy';
+          node.referrerPolicy = 'no-referrer-when-downgrade';
+          node.style.width = '100%';
+          node.style.height = '100%';
         }
-        if(u.hostname.includes('youtube.com')){
-          const id = u.searchParams.get('v');
-          if(id) return `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+        videoModal.classList.add('open');
+        videoModal.setAttribute('aria-hidden','false');
+        document.body.style.overflow = 'hidden';
+        videoMount.appendChild(node);
+      }
+
+      function closeVideoModal(){
+        videoModal.classList.remove('open');
+        videoModal.setAttribute('aria-hidden','true');
+        document.body.style.overflow = '';
+        videoMount.innerHTML = '';
+      }
+
+      function openTextModal(templateId){
+        textMount.innerHTML = '';
+        const tpl = document.getElementById(templateId);
+        if(tpl && 'content' in tpl){ textMount.appendChild(tpl.content.cloneNode(true)); }
+        else { textMount.innerHTML = '<p>Details coming soon.</p>'; }
+        textModal.classList.add('open');
+        textModal.setAttribute('aria-hidden','false');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeTextModal(){
+        textModal.classList.remove('open');
+        textModal.setAttribute('aria-hidden','true');
+        document.body.style.overflow = '';
+        textMount.innerHTML = '';
+      }
+
+      document.addEventListener('click', (e)=>{
+        const lm = e.target.closest('a.learn-more');
+        if(lm){
+          e.preventDefault(); e.stopPropagation();
+          openTextModal(lm.getAttribute('data-project'));
+          return;
         }
-      }catch(e){}
-      return null;
-    }
+        const card = e.target.closest('.card');
+        if(!card) return;
+        const src = card.getAttribute('data-video');
+        if(src){
+          if(card.tagName.toLowerCase() === 'a') e.preventDefault();
+          openVideoModal(src);
+        }
+      });
 
-    function openVideoModal(src){
-      videoMount.innerHTML = '';
-      let node;
-      if(/\.mp4($|\?)/i.test(src)){
-        node = document.createElement('video');
-        node.setAttribute('controls','');
-        node.setAttribute('autoplay','');
-        node.src = src;
-        node.style.width = '100%';
-        node.style.height = '100%';
-      } else {
-        const yt = ytToEmbed(src);
-        const iframeSrc = yt || (src + (src.includes('?') ? '&' : '?') + 'autoplay=1');
-        node = document.createElement('iframe');
-        node.src = iframeSrc;
-        node.allow = 'autoplay; fullscreen; picture-in-picture';
-        node.loading = 'lazy';
-        node.referrerPolicy = 'no-referrer-when-downgrade';
-        node.style.width = '100%';
-        node.style.height = '100%';
-      }
-      videoModal.classList.add('open');
-      videoModal.setAttribute('aria-hidden','false');
-      document.body.style.overflow = 'hidden';
-      videoMount.appendChild(node);
-    }
-
-    function closeVideoModal(){
-      videoModal.classList.remove('open');
-      videoModal.setAttribute('aria-hidden','true');
-      document.body.style.overflow = '';
-      videoMount.innerHTML = '';
-    }
-
-    function openTextModal(templateId){
-      textMount.innerHTML = '';
-      const tpl = document.getElementById(templateId);
-      if(tpl && 'content' in tpl){ textMount.appendChild(tpl.content.cloneNode(true)); }
-      else { textMount.innerHTML = '<p>Details coming soon.</p>'; }
-      textModal.classList.add('open');
-      textModal.setAttribute('aria-hidden','false');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeTextModal(){
-      textModal.classList.remove('open');
-      textModal.setAttribute('aria-hidden','true');
-      document.body.style.overflow = '';
-      textMount.innerHTML = '';
-    }
-
-    document.addEventListener('click', (e)=>{
-      const lm = e.target.closest('a.learn-more');
-      if(lm){
-        e.preventDefault(); e.stopPropagation();
-        openTextModal(lm.getAttribute('data-project'));
-        return;
-      }
-      const card = e.target.closest('.card');
-      if(!card) return;
-      const src = card.getAttribute('data-video');
-      if(src){
-        if(card.tagName.toLowerCase() === 'a') e.preventDefault();
-        openVideoModal(src);
-      }
-    });
-
-    document.querySelectorAll('#videoModal [data-close]').forEach(el=> el.addEventListener('click', closeVideoModal));
-    document.querySelectorAll('#textModal [data-close]').forEach(el=> el.addEventListener('click', closeTextModal));
-    document.addEventListener('keydown', (e)=>{ if(e.key==='Escape'){ closeVideoModal(); closeTextModal(); }});
-  })();
-</script>
+      document.querySelectorAll('#videoModal [data-close]').forEach(el=> el.addEventListener('click', closeVideoModal));
+      document.querySelectorAll('#textModal [data-close]').forEach(el=> el.addEventListener('click', closeTextModal));
+      document.addEventListener('keydown', (e)=>{ if(e.key==='Escape'){ closeVideoModal(); closeTextModal(); }});
+    })();
+  </script>
 
 </body>
-  </html>
+</html>
